@@ -8,4 +8,4 @@ let distancia_m = distancia_km * 1000;
 let tiempo_seg = tiempo_min * 60;
 let velocidad_m_s = distancia_m / tiempo_seg;
 
-window.alert(`La velocidad del proyectil es de ${velocidad_m_s.toFixed(2-)} metros por segundo`)
+window.alert(`La velocidad del proyectil es de ${velocidad_m_s.toFixed(2)} metros por segundo`)
