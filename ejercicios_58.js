@@ -1,81 +1,103 @@
-// Se desea realizar una aplicación que ingrese el nombre del mes y mostrar que signo
-// zodiacal pertenece, para ello usar if_else anidados
+let dia = parseInt(prompt("Introduce día"));
+let mes = prompt("Introduce mes");
 
-dia = prompt ("Introduce día");
-mes = prompt ("Introduce mes");
+switch (mes.toLowerCase()) {
+    case "enero":
+        if (dia >= 21) {
+            alert("Acuario");
+        } else {
+            alert("Capricornio");
+        }
+        break;
 
-switch(mes)
+    case "febrero":
+        if (dia <= 19) {
+            alert("Acuario");
+        } else {
+            alert("Piscis");
+        }
+        break;
 
-{
-case "enero": 
-if (dia>=21)
-alert("acuario");
+    case "marzo":
+        if (dia <= 20) {
+            alert("Piscis");
+        } else {
+            alert("Aries");
+        }
+        break;
 
+    case "abril":
+        if (dia <= 20) {
+            alert("Aries");
+        } else {
+            alert("Tauro");
+        }
+        break;
 
-case "febrero": 
-if (dia<=19)
-alert("acuario");
-else
-alert("piscis");
+    case "mayo":
+        if (dia <= 21) {
+            alert("Tauro");
+        } else {
+            alert("Géminis");
+        }
+        break;
 
-case "marzo": 
-if (dia<=20)
-alert("piscis");
-else
-alert("aries");
+    case "junio":
+        if (dia <= 21) {
+            alert("Géminis");
+        } else {
+            alert("Cáncer");
+        }
+        break;
 
-case "abril": 
-if (dia<=20)
-alert("aries");
-else
-alert("tauro");
+    case "julio":
+        if (dia >= 23) {
+            alert("Cáncer");
+        } else {
+            alert("Leo");
+        }
+        break;
 
-case "mayo": 
-if (dia<=21)
-alert("tauro");
-else
-alert("geminis");
+    case "agosto":
+        if (dia <= 23) {
+            alert("Leo");
+        } else {
+            alert("Virgo");
+        }
+        break;
 
-case "junio": // 06
-if (dia<=21)
-alert("geminis");
-else
-alert("cancer");
+    case "septiembre":
+        if (dia <= 23) {
+            alert("Virgo");
+        } else {
+            alert("Libra");
+        }
+        break;
 
-case "julio": // 07
-if (dia>=23)
-alert("cancer");
-else
-alert("leo");
+    case "octubre":
+        if (dia <= 23) {
+            alert("Libra");
+        } else {
+            alert("Escorpio");
+        }
+        break;
 
-case "agosto": // 08
-if (dia<=23)
-alert("leo");
-else
-alert("virgo");
+    case "noviembre":
+        if (dia <= 22) {
+            alert("Escorpio");
+        } else {
+            alert("Sagitario");
+        }
+        break;
 
-case "septiembre": // 09
-if (dia<=23)
-alert("virgo");
-else
-alert("libra");
+    case "diciembre":
+        if (dia <= 21) {
+            alert("Sagitario");
+        } else {
+            alert("Capricornio");
+        }
+        break;
 
-case "octubre": // 10
-if (dia<=23)
-alert("libra");
-else
-alert("escorpio");
-
-case "noviembre": // 11
-if (dia<=22)
-alert("escorpio");
-else
-alert("sagitario");
-
-case "diciembre": // 12
-if (dia<=21)
-alert("sagitario");
-else
-alert("capricornio");
-
+    default:
+        alert("El mes ingresado no es válido.");
 }

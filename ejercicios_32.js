@@ -18,4 +18,4 @@ let pre_fin2 = des2
 let pre_fin4 = des4
 let pre_fin5 = des5
 
-alert(`El precio final del primer producto es de; ${pre_fin1} \nEl del segundo producto es de: ${pre_fin2} \nEl del tercero es de: ${pro3} \nEl del cuarto es de: ${pre_fin4} \nEl del quinto es de: ${pre_fin5}`)
+alert(`El precio final del primer producto es de: ${des1} \nEl del segundo producto es de: ${des2} \nEl del tercero es de: ${pro3} \nEl del cuarto es de: ${des4} \nEl del quinto es de: ${des5}`)
