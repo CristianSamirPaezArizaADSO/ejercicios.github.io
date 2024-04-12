@@ -9,7 +9,7 @@ let pago;
 if (cursos <= 6) {
     pago = cursos * 2000000
 } else {
-    pago = 1200000 
+    pago = cursos * 1200000 
 }
 
 alert(`El pago total es de: ${pago}`)
